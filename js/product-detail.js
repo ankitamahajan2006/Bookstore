@@ -7,7 +7,6 @@ const id = parseInt(params.get("id"));
 
 const detailSection = document.getElementById("product-detail");
 
-// Use the correct variable name: books (not products)
 const product = books.find((p) => p.id === id);
 
 if (product) {

@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
       const title = product.querySelector("h4").textContent;
       const author = product.querySelector("p").textContent;
-      const priceText = product.querySelectorAll("p")[1].textContent; // e.g., ₹350
+      const priceText = product.querySelectorAll("p")[1].textContent; 
       const price = parseInt(priceText.replace("₹", "").trim());
       const image = product.querySelector("img").getAttribute("src");
 
@@ -26,7 +26,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
       cartItems.push(item);
 
-      // Save to localStorage
       localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
       alert(`${title} added to cart!`);
@@ -35,7 +34,7 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Logout Function
+
 document.getElementById("logout-btn").addEventListener("click", function () {
     localStorage.removeItem("loggedInUser");
     alert("Logged out successfully!");

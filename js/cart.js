@@ -1,10 +1,8 @@
-// 🛑 Login check - जर user login नसेल तर login page ला पाठव
 if (!localStorage.getItem("loggedInUser")) {
     alert("Please login to access the cart.");
     window.location.href = "login.html";
 }
 
-// ✅ Cart functionality
 window.addEventListener("DOMContentLoaded", () => {
     const cartItemsContainer = document.getElementById("cart-items");
     const totalElement = document.getElementById("total");
