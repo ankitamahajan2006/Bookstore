@@ -1,0 +1,126 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2d3645; 
+  color: #C9D1D9; 
+}
+
+header {
+  background-color: #0D1117;
+  color: #C9D1D9;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #C9D1D9; /* Neon Green */
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product {
+  border: 1px solid #30363D;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  background-color: #161B22; /* Slightly lighter dark */
+  border-radius: 10px;
+  transition: transform 0.2s;
+  color: #C9D1D9;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #39FF14; /* Neon Green */
+  color: #0D1117; /* Dark text on light button */
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #32CD12; /* Slightly darker green */
+}
+
+.total-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.place-order-btn {
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.place-order-btn:hover {
+  background-color: #00cc00;
+}
+.qr-image {
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.payment-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 10px;
+}
+
+.payment-container button {
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
